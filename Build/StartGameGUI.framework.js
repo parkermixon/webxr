@@ -12,7 +12,7 @@ const adj_size_observer = new MutationObserver((mutationsList) => {
     console.log("change")
     let target = mutationsList[0].target;
     console.log(target);
-    target.style.bottom = -target.offsetHeight + "px";
+    target.style.height = target.offsetHeight + "px";
 });
 
 adj_size_observer.observe(footer, { attributes: true, childList: true });
