@@ -19,7 +19,7 @@ adj_size_observer.observe(footer, { attributes: true, childList: true });
 
 createGameSelect(); //temp
 
-const ws = new WebSocket('ws://192.168.1.243/game');
+const ws = new WebSocket('wss://192.168.1.243/game');
 
 ws.onload = initWS;
 
